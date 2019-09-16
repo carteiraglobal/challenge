@@ -4,8 +4,28 @@
 
 ## Objetivos
 Desenvolver uma calculadora de Simuladora de Renda Fixa utilizando style guide e regras de negócio abaixo.
-- O app deverá fazer uma requisição http para o endpoint das especificações das regras de negócio e salvá-las na Store;
-- O usuário deverá ser capaz de alterar o resultado apresentado no gráfico, utilizando os Sliders à esquerda.
+- O usuário deverá ser capaz de alterar o resultado apresentado no gráfico, utilizando os Sliders à esquerda;
+- O app deverá fazer uma requisição http para o endpoint das configurações dos Sliders e salvá-las na Store.
+
+      Endpoint:
+      GET: https://carbon.carteiraglobal.com/
+
+Exemplo Formato da response da http request:
+
+    {
+        minInvestValue: 0,
+        maxInvestValue: 999999,
+        minPeriod: 1,
+        maxPeriod: 36,
+        minCdbLcAnualTax: 0,
+        maxCdbLcAnualTax: 110,
+        minLciLcaAnualTax: 0,
+        maxLciLcaAnualTax: 135,
+        minDiTax: 0,
+        maxDiTax: 18,
+        minIpcaTax: 0,
+        maxIpcaTax: 18,
+    }
 
 ## Regras de Negócio
 *Aqui estarão definas as fórmulas de regras de negócio*
