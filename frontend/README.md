@@ -2,7 +2,7 @@
 
 # Challenge Frontend
 
-![simulador-renda-fixa](/Users/lucasbastianik/Development/Carteira/challenge/frontend/simulador-renda-fixa.png)
+![simulador-renda-fixa](./simulador-renda-fixa.png)
 
 ## Objetivos
 
