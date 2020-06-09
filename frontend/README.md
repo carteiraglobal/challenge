@@ -92,7 +92,7 @@ Exemplo do formato da response da HTTP request:
 
 ## Requisitos Técnicos
 - O seu código deverá ser compartilhado em um repositório público no Github;
-- Você deverá usar React e Redux;
+- Você deverá usar React;
 - Você poderá usar scaffolds como Create React App, ou framework de componentes como Ant Design ou Materialize, desde que se atente ao que será avaliado.
 
 ## O que será avaliado
