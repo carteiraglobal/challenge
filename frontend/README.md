@@ -75,8 +75,8 @@ Exemplo do formato da response da HTTP request:
 
 - A rentabilidade da poupança é feita da mesma maneira que o "% do CDI", utilizando no entanto sempre uma taxa fixa de 70%.
 - A rentabilidade de todas as `rateOptions` é feita achando o fator de cotização e multiplicando pelo valor investido. Este é o Valor Bruto. O valor rendimento é feito subitraindo o Valor Investido do Valor Bruto.
-- Fórmula do Fator de cotização do "% do CDI" = `(((1 + CDI)^ (1/252) - 1 ) * "CdiPercent" + 1) ^ (DUs/252)`
-- Fórmula do Fator de cotização do "IPCA+" ou "CDI+" = `((1 + {TAXA IPCA ou TAXA DI}) * (1 + {"IpcaPlus ou CdiPlus"})) ^ (DUs/252)`
+- Fórmula do Fator de cotização do "% do CDI" = `(((1 + CDI)^ (1/252) - 1 ) * "CdiPercent" + 1) ^ (DUs)`
+- Fórmula do Fator de cotização do "IPCA+" ou "CDI+" = `((1 + {TAXA IPCA ou TAXA DI}) * (1 + {"IpcaPlus ou CdiPlus"})) ^ (DUs)`
 - Fórmula do Fator de cotização do "Prefixado": `(1 + "FixedRate") ^ (DUs / 252)`
 - DUs = Número de dias úteis no período. DUs = 21 * número de meses (período)
 - Os investimentos "Poupança" e "LCI/LCA" são isentos de imposto de renda, logo o TOTAL LÍQUIDO = VALOR BRUTO.
