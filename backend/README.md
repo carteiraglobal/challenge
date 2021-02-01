@@ -3,9 +3,9 @@
 # Challenge Backend
 
 ## Objetivos
-O objetivo desse Challenge é testar a sua capacidade, criatividade para extrair, transformar e carregar as informações limpa de um site em uma base de dados.
+O objetivo desse Challenge é testar a sua capacidade e criatividade para extrair, transformar e carregar as informações limpa de um site em uma base de dados.
 
-Iremos trabalhar com os dados abertos da SUSEP Superintendência de Seguros Privados - que, apesar de voltada para seguros, também regula a parcela de planos e fundos de investimentos de previdência privada.
+Iremos trabalhar com os dados abertos da SUSEP - Superintendência de Seguros Privados - que, apesar de voltada para seguros, também regula a parcela de planos e fundos de investimentos de previdência privada.
 
 O conjunto de dados abertos se encontra seguinte link:
 https://dados.gov.br/organization/superintendencia-de-seguros-privados-susep
@@ -26,40 +26,39 @@ O documento PDF deve ser baixado na sua máquina (ambiente local).
 
 A partir disso, precisamos extrair as seguintes informações do PDF e salvar um novo JSON.
 
-```
-Exemplo de Processo SUSEP:
+**Exemplo de Processo SUSEP:**
 15414.607577/2020-12
 15414.900943/2013-72
 
-Exemplo Processo SUSEP nº: 15414.900943/2013-72
+**Exemplo Processo SUSEP nº:** 15414.900943/2013-72
 
-Características
-CNPJ da Entidade: 51.990.695/0001-37
-Nome da Entidade:  BRADESCO VIDA E PREVIDÊNCIA S.A.
-Descrição do Processo: VGBL INDIVIDUAL - Renda fixa
-Data de Distribuição: 14/10/2013
-Tábua Atuarial Masculina: BR-EMSsb
-Tábua Atuarial Feminina: BR-EMSsb
-Taxa de Carregamento: 0% Cobrado quando da efetivação de pedidos de resgate e/ou portabilidade
-Taxa de Juros: 0%
-Percentual de Reversão: 0%
-Status na SUSEP: ARQUIVADO/ARQUIVO GERAL
+**Características**
+**CNPJ da Entidade:** 51.990.695/0001-37
+**Nome da Entidade:**  BRADESCO VIDA E PREVIDÊNCIA S.A.
+**Descrição do Processo:** VGBL INDIVIDUAL - Renda fixa
+**Data de Distribuição:** 14/10/2013
+**Tábua Atuarial Masculina:** BR-EMSsb
+**Tábua Atuarial Feminina:** BR-EMSsb
+**Taxa de Carregamento:** 0% Cobrado quando da efetivação de pedidos de resgate e/ou portabilidade
+**Taxa de Juros:** 0%
+**Percentual de Reversão:** 0%
+**Status na SUSEP:** ARQUIVADO/ARQUIVO GERAL
 
-Tipos de renda
-Pagamento único: SIM
-Mensal temporária (máximo de 600 meses): SIM
-Mensal prazo certo: SIM
-Mensal vitalícia: SIM
-Mensal vitalícia com prazo mínimo garantido: SIM
-Mensal vitalícia reversível ao beneficiário indicado: SIM
-Mensal vitalícia reversível ao cônjuge com continuidade aos menores (maioridade aos 24): SIM
-Mensal vitalícia reversível ao cônjuge: N/A
-Mensal reversível aos menores: N/A
+**Tipos de renda**
+**Pagamento único:** SIM
+**Mensal temporária (máximo de 600 meses):** SIM
+**Mensal prazo certo:** SIM
+**Mensal vitalícia:** SIM
+**Mensal vitalícia com prazo mínimo garantido:** SIM
+**Mensal vitalícia reversível ao beneficiário indicado:** SIM
+**Mensal vitalícia reversível ao cônjuge com continuidade aos menores (maioridade aos 24):** SIM
+**Mensal vitalícia reversível ao cônjuge:** N/A
+**Mensal reversível aos menores:** N/A
 
-Da aplicação dos recursos
+**Da aplicação dos recursos**
 (Art. 54. Os recursos do plano serão aplicados em um dos seguintes FIEs)
 
-CNPJ Fundo | Nome Fundo | Taxa de Administração
+**CNPJ Fundo | Nome Fundo | Taxa de Administração**
 17.488.983/0001-50 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA I-A 1,9 %
 17.488.691/0001-17 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA II-A 1,9 %
 17.517.216/0001-21 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA III-A 1,5 %
@@ -67,12 +66,12 @@ CNPJ Fundo | Nome Fundo | Taxa de Administração
 17.517.268/0001-06 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA V-A 1 %
 17.999.961/0001-54 BRADESCO FUNDO DE INVESTIMENTO RENDA FIXA MÁSTER IV PREVIDÊNCIA 0 %
 
-Parâmetros técnicos
-Valor mínimo da provisão matemática de benefícios a conceder: R$ 500,00
-Prazo de Carência: 6 meses
-Carência para Portabilidade: 60 dias
-Carência para Portabilidade na própria Entidade: 60 dias
-```
+**Parâmetros técnicos**
+**Valor mínimo da provisão matemática de benefícios a conceder:** R$ 500,00
+**Prazo de Carência:** 6 meses
+**Carência para Portabilidade:** 60 dias
+**Carência para Portabilidade na própria Entidade:** 60 dias
+
 
 ### Histórico de Documentos
 - Baixar e salvar todos os documentos na consulta: http://www.susep.gov.br/menu/consulta-de-produtos-1
