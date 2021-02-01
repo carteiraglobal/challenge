@@ -89,7 +89,7 @@ De qualquer maneira, a coisa mais importante aqui é o cálculo a partir da táb
 Por exemplo: Renda Mensal Vitalicia. Mais importante que pegar essas informações, dado que podem ser obtidas pelo PDF, é modelar essa memória de cálculo.
 Assim, esse Challenge extra é conseguir modelar o cálculo da Renda Mensal Vitalicia a partir das informações obtida na leitura do PDF e inputs a seguir (contidos no site):
 
-![susep-calculo](/Users/lucasbastianik/Dev/carteiraglobal/challenge/backend/susep-calculo.png)
+![susep-calculo](./susep-calculo.png)
 
 
 ## O que será avaliado
