@@ -26,51 +26,52 @@ O documento PDF deve ser baixado na sua máquina (ambiente local).
 
 A partir disso, precisamos extrair as seguintes informações do PDF e salvar um novo JSON.
 
+
 **Exemplo de Processo SUSEP:**
-15414.607577/2020-12
-15414.900943/2013-72
+<br/>15414.607577/2020-12 
+<br/>15414.900943/2013-72
 
 **Exemplo Processo SUSEP nº:** 15414.900943/2013-72
 
 **Características**
-**CNPJ da Entidade:** 51.990.695/0001-37
-**Nome da Entidade:**  BRADESCO VIDA E PREVIDÊNCIA S.A.
-**Descrição do Processo:** VGBL INDIVIDUAL - Renda fixa
-**Data de Distribuição:** 14/10/2013
-**Tábua Atuarial Masculina:** BR-EMSsb
-**Tábua Atuarial Feminina:** BR-EMSsb
-**Taxa de Carregamento:** 0% Cobrado quando da efetivação de pedidos de resgate e/ou portabilidade
-**Taxa de Juros:** 0%
-**Percentual de Reversão:** 0%
-**Status na SUSEP:** ARQUIVADO/ARQUIVO GERAL
+<br/>**CNPJ da Entidade:** 51.990.695/0001-37
+<br/>**Nome da Entidade:**  BRADESCO VIDA E PREVIDÊNCIA S.A.
+<br/>**Descrição do Processo:** VGBL INDIVIDUAL - Renda fixa
+<br/>**Data de Distribuição:** 14/10/2013
+<br/>**Tábua Atuarial Masculina:** BR-EMSsb
+<br/>**Tábua Atuarial Feminina:** BR-EMSsb
+<br/>**Taxa de Carregamento:** 0% Cobrado quando da efetivação de pedidos de resgate e/ou portabilidade
+<br/>**Taxa de Juros:** 0%
+<br/>**Percentual de Reversão:** 0%
+<br/>**Status na SUSEP:** ARQUIVADO/ARQUIVO GERAL
 
 **Tipos de renda**
-**Pagamento único:** SIM
-**Mensal temporária (máximo de 600 meses):** SIM
-**Mensal prazo certo:** SIM
-**Mensal vitalícia:** SIM
-**Mensal vitalícia com prazo mínimo garantido:** SIM
-**Mensal vitalícia reversível ao beneficiário indicado:** SIM
-**Mensal vitalícia reversível ao cônjuge com continuidade aos menores (maioridade aos 24):** SIM
-**Mensal vitalícia reversível ao cônjuge:** N/A
-**Mensal reversível aos menores:** N/A
+<br/>**Pagamento único:** SIM
+<br/>**Mensal temporária (máximo de 600 meses):** SIM
+<br/>**Mensal prazo certo:** SIM
+<br/>**Mensal vitalícia:** SIM
+<br/>**Mensal vitalícia com prazo mínimo garantido:** SIM
+<br/>**Mensal vitalícia reversível ao beneficiário indicado:** SIM
+<br/>**Mensal vitalícia reversível ao cônjuge com continuidade aos menores (maioridade aos 24):** SIM
+<br/>**Mensal vitalícia reversível ao cônjuge:** N/A
+<br/>**Mensal reversível aos menores:** N/A
 
 **Da aplicação dos recursos**
-(Art. 54. Os recursos do plano serão aplicados em um dos seguintes FIEs)
+<br/>(Art. 54. Os recursos do plano serão aplicados em um dos seguintes FIEs)
 
 **CNPJ Fundo | Nome Fundo | Taxa de Administração**
-17.488.983/0001-50 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA I-A 1,9 %
-17.488.691/0001-17 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA II-A 1,9 %
-17.517.216/0001-21 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA III-A 1,5 %
-17.517.250/0001-04 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA IV-A 1,2 %
-17.517.268/0001-06 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA V-A 1 %
-17.999.961/0001-54 BRADESCO FUNDO DE INVESTIMENTO RENDA FIXA MÁSTER IV PREVIDÊNCIA 0 %
+<br/>17.488.983/0001-50 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA I-A 1,9 %
+<br/>17.488.691/0001-17 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA II-A 1,9 %
+<br/>17.517.216/0001-21 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA III-A 1,5 %
+<br/>17.517.250/0001-04 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA IV-A 1,2 %
+<br/>17.517.268/0001-06 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA V-A 1 %
+<br/>17.999.961/0001-54 BRADESCO FUNDO DE INVESTIMENTO RENDA FIXA MÁSTER IV PREVIDÊNCIA 0 %
 
 **Parâmetros técnicos**
-**Valor mínimo da provisão matemática de benefícios a conceder:** R$ 500,00
-**Prazo de Carência:** 6 meses
-**Carência para Portabilidade:** 60 dias
-**Carência para Portabilidade na própria Entidade:** 60 dias
+<br/>**Valor mínimo da provisão matemática de benefícios a conceder:** R$ 500,00
+<br/>**Prazo de Carência:** 6 meses
+<br/>**Carência para Portabilidade:** 60 dias
+<br/>**Carência para Portabilidade na própria Entidade:** 60 dias
 
 
 ### Histórico de Documentos
@@ -80,18 +81,22 @@ A partir disso, precisamos extrair as seguintes informações do PDF e salvar um
 
 
 ## Extra _(não é obrigatório, avaliaremos como um extra)_
-Outra possibilidade é extrair parte dessa informações, a partir do processo Exemplo Processo SUSEP, do seguinte link:
+Outra possibilidade é extrair parte dessas informações a partir do processo Exemplo Processo SUSEP, do seguinte link:
 http://www.susep.gov.br/menu/servicos-ao-cidadao/calculo-vgbl
 
 O único problema é o reCAPTCHA, que previne o scrapper.
 De qualquer maneira, a coisa mais importante aqui é o cálculo a partir da tábua atuarial. 
 Por exemplo: Renda Mensal Vitalicia. Mais importante que pegar essas informações, dado que podem ser obtidas pelo PDF, é modelar essa memória de cálculo.
+
 Assim, esse Challenge extra é conseguir modelar o cálculo da Renda Mensal Vitalicia a partir das informações obtida na leitura do PDF e inputs a seguir (contidos no site):
 
 ![susep-calculo](./susep-calculo.png)
 
 
 ## O que será avaliado
+- Extração dos dados;
+- Manipulação de listas e dicionários;
+- Manipulação dos arquivos;
+- Componentização das funções por cada responsabilidade (extract, transform, load);
 - Organização de code base, tanto código quanto arquivos;
-- Manipulação de listas e dicionários.
 
