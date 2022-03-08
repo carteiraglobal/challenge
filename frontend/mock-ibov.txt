@@ -1,0 +1,1850 @@
+Alocação por Categoria
+
+{
+  "getWalletAssetAllocation": {
+      "dataSeries": [
+          {
+              "name": "Conta Corrente",
+              "color": "#2972C2",
+              "y": 1.44,
+              "value": 2347.42,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Tesouro Direto",
+              "color": "#EAC74D",
+              "y": 24.46,
+              "value": 39743.8,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Crédito Privado",
+              "color": "#4707C5",
+              "y": 15.36,
+              "value": 24951.45,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Fundo Multimercado",
+              "color": "#6205d0",
+              "y": 0.2,
+              "value": 319.1,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Ação",
+              "color": "#D62023",
+              "y": 1.38,
+              "value": 2246.64,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "BDR",
+              "color": "#6C22CA",
+              "y": 0.84,
+              "value": 1361.85,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Criptomoeda",
+              "color": "#A41C1C",
+              "y": 51.91,
+              "value": 84333.36,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Previdência",
+              "color": "#E9833A",
+              "y": 0.21,
+              "value": 346.2,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Personalizado",
+              "color": "#ADACBC",
+              "y": 0.36,
+              "value": 578.12,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Moeda",
+              "color": "#8B4513",
+              "y": 3.84,
+              "value": 6236.39,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          }
+      ],
+      "__typename": "WalletAssetAllocation"
+  }
+}
+
+Alocação por Classe
+
+{
+  "getWalletAssetAllocation": {
+      "dataSeries": [
+          {
+              "name": "Caixa",
+              "color": "#38587a",
+              "y": 1.44,
+              "value": 2347.42,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Pós-Fixado",
+              "color": "#ae4600",
+              "y": 15.36,
+              "value": 24951.45,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Inflação",
+              "color": "#00DCFF",
+              "y": 24.46,
+              "value": 39743.8,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Multimercado",
+              "color": "#d8495b",
+              "y": 0.2,
+              "value": 319.1,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Renda Variável",
+              "color": "#1b0d29",
+              "y": 1.6,
+              "value": 2592.84,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Cambial",
+              "color": "#ca6464",
+              "y": 3.84,
+              "value": 6236.39,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Imobiliário",
+              "color": "#800000",
+              "y": 0.36,
+              "value": 578.12,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Internacional",
+              "color": "#3333cc",
+              "y": 0.84,
+              "value": 1361.85,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          },
+          {
+              "name": "Criptomoeda",
+              "color": "#f0b126",
+              "y": 51.9,
+              "value": 84333.36,
+              "__typename": "WalletAssetAllocationDataSeriesItem"
+          }
+      ],
+      "__typename": "WalletAssetAllocation"
+  }
+}
+
+Histórico de Rentabilidade
+
+{
+  "getCumulativeReturn": {
+      "dataSeries": [
+          {
+              "id": "0",
+              "name": "IBOV",
+              "color": "#C0C1C3",
+              "data": [
+                  [
+                      1643684400000,
+                      0
+                  ],
+                  [
+                      1643770800000,
+                      -1.1781
+                  ],
+                  [
+                      1643857200000,
+                      -1.3533
+                  ],
+                  [
+                      1643943600000,
+                      -0.8684000000000001
+                  ],
+                  [
+                      1644202800000,
+                      -1.0878999999999999
+                  ],
+                  [
+                      1644289200000,
+                      -0.8777
+                  ],
+                  [
+                      1644375600000,
+                      -0.6773
+                  ],
+                  [
+                      1644462000000,
+                      0.12310000000000001
+                  ],
+                  [
+                      1644548400000,
+                      0.3038
+                  ],
+                  [
+                      1644807600000,
+                      0.5923999999999999
+                  ],
+                  [
+                      1644894000000,
+                      1.4128999999999998
+                  ],
+                  [
+                      1644980400000,
+                      1.7245
+                  ],
+                  [
+                      1645066800000,
+                      0.265
+                  ],
+                  [
+                      1645153200000,
+                      -0.3077
+                  ],
+                  [
+                      1645412400000,
+                      -1.3274
+                  ],
+                  [
+                      1645498800000,
+                      -0.29719999999999996
+                  ],
+                  [
+                      1645585200000,
+                      -1.078
+                  ],
+                  [
+                      1645671600000,
+                      -1.4452
+                  ],
+                  [
+                      1645758000000,
+                      -0.0762
+                  ],
+                  [
+                      1646190000000,
+                      1.718
+                  ],
+                  [
+                      1646276400000,
+                      1.7108999999999999
+                  ],
+                  [
+                      1646362800000,
+                      1.0999
+                  ],
+                  [
+                      1646622000000,
+                      -1.4438
+                  ]
+              ],
+              "__typename": "CumulativeReturnDataSeriesItem"
+          },
+          {
+              "id": "1",
+              "name": "Carteira",
+              "color": "#007aff",
+              "data": [
+                  [
+                      1643684400000,
+                      0
+                  ],
+                  [
+                      1643770800000,
+                      0
+                  ],
+                  [
+                      1643857200000,
+                      0.0036999999999999997
+                  ],
+                  [
+                      1643943600000,
+                      0.0042
+                  ],
+                  [
+                      1644202800000,
+                      0.0067
+                  ],
+                  [
+                      1644289200000,
+                      0.0073999999999999995
+                  ],
+                  [
+                      1644375600000,
+                      0.007899999999999999
+                  ],
+                  [
+                      1644462000000,
+                      0.0115
+                  ],
+                  [
+                      1644548400000,
+                      -1.5765000000000002
+                  ],
+                  [
+                      1644807600000,
+                      -7.7357
+                  ],
+                  [
+                      1644894000000,
+                      -5.4096
+                  ],
+                  [
+                      1644980400000,
+                      -6.1387
+                  ],
+                  [
+                      1645066800000,
+                      -10.7552
+                  ],
+                  [
+                      1645153200000,
+                      -11.5191
+                  ],
+                  [
+                      1645412400000,
+                      -15.706000000000001
+                  ],
+                  [
+                      1645498800000,
+                      -13.986199999999998
+                  ],
+                  [
+                      1645585200000,
+                      -15.5013
+                  ],
+                  [
+                      1645671600000,
+                      -13.850100000000001
+                  ],
+                  [
+                      1645758000000,
+                      -12.6496
+                  ],
+                  [
+                      1646190000000,
+                      -6.069100000000001
+                  ],
+                  [
+                      1646276400000,
+                      -8.1316
+                  ],
+                  [
+                      1646362800000,
+                      -12.7595
+                  ],
+                  [
+                      1646622000000,
+                      -14.4705
+                  ]
+              ],
+              "__typename": "CumulativeReturnDataSeriesItem"
+          }
+      ],
+      "profile": [
+          {
+              "label": "Carteira",
+              "value": "-14.47%",
+              "__typename": "CumulativeReturnProfileItem"
+          },
+          {
+              "label": "IBOV",
+              "value": "-1.44%",
+              "__typename": "CumulativeReturnProfileItem"
+          },
+          {
+              "label": "p.p. do  IBOV",
+              "value": "-13.03%",
+              "__typename": "CumulativeReturnProfileItem"
+          },
+          {
+              "label": "Vol",
+              "value": "47.75%",
+              "__typename": "CumulativeReturnProfileItem"
+          },
+          {
+              "label": "Sharpe",
+              "value": "-1.40",
+              "__typename": "CumulativeReturnProfileItem"
+          }
+      ],
+      "keys": [
+          {
+              "id": 0,
+              "sharpe": null,
+              "annualized_return": -0.147296,
+              "relative_return": 0,
+              "equity_return": 0,
+              "absolute_return": -0.014438,
+              "label": "IBOV",
+              "volatility": 0.156283,
+              "equity_value": null,
+              "ev_percent": null,
+              "__typename": "CumulativeReturnKey"
+          },
+          {
+              "id": 1,
+              "sharpe": -1.4,
+              "annualized_return": -0.819604,
+              "relative_return": -0.130267,
+              "equity_return": -24652.012579270024,
+              "absolute_return": -0.144705,
+              "label": "Carteira",
+              "volatility": 0.47755,
+              "equity_value": null,
+              "ev_percent": null,
+              "__typename": "CumulativeReturnKey"
+          }
+      ],
+      "values": [
+          {
+              "date": "2022-02-01",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-02",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.011781,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-03",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.013533,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0.000037,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-04",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.008684,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0.000042,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-07",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.010879,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0.000067,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-08",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.008777,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0.000074,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-09",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.006773,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0.000079,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-10",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.001231,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": 0.000115,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-11",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.003038,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.015765,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-14",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.005924,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.077357,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-15",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.014129,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.054096,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-16",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.017245,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.061387,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-17",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.00265,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.107552,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-18",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.003077,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.115191,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-21",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.013274,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.15706,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-22",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.002972,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.139862,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-23",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.01078,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.155013,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-24",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.014452,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.138501,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-02-25",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.000762,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.126496,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-03-02",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.01718,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.060691,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-03-03",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.017109,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.081316,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-03-04",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": 0.010999,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.127595,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          },
+          {
+              "date": "2022-03-07",
+              "data": [
+                  {
+                      "id": 0,
+                      "value": -0.014438,
+                      "__typename": "ValueData"
+                  },
+                  {
+                      "id": 1,
+                      "value": -0.144705,
+                      "__typename": "ValueData"
+                  }
+              ],
+              "line_id": null,
+              "label": null,
+              "__typename": "CumulativeReturnValues"
+          }
+      ],
+      "__typename": "CumulativeReturn"
+  }
+}
+
+Evolução Patrimonial
+
+{
+  "getEquityEvolution": {
+      "dataSeries": [
+          {
+              "id": "1",
+              "name": "Aplicações",
+              "data": [
+                  [
+                      1643684400000,
+                      39743.8
+                  ],
+                  [
+                      1643770800000,
+                      63393.8
+                  ],
+                  [
+                      1643857200000,
+                      63393.8
+                  ],
+                  [
+                      1643943600000,
+                      63393.8
+                  ],
+                  [
+                      1644202800000,
+                      63393.8
+                  ],
+                  [
+                      1644289200000,
+                      63393.8
+                  ],
+                  [
+                      1644375600000,
+                      170603.76
+                  ],
+                  [
+                      1644462000000,
+                      185270.42
+                  ],
+                  [
+                      1644548400000,
+                      185270.42
+                  ],
+                  [
+                      1644807600000,
+                      208270.42
+                  ],
+                  [
+                      1644894000000,
+                      188894.05
+                  ],
+                  [
+                      1644980400000,
+                      188894.05
+                  ],
+                  [
+                      1645066800000,
+                      188894.05
+                  ],
+                  [
+                      1645153200000,
+                      188894.05
+                  ],
+                  [
+                      1645412400000,
+                      186178.84
+                  ],
+                  [
+                      1645498800000,
+                      186178.84
+                  ],
+                  [
+                      1645585200000,
+                      186178.84
+                  ],
+                  [
+                      1645671600000,
+                      186178.84
+                  ],
+                  [
+                      1645758000000,
+                      186178.84
+                  ],
+                  [
+                      1646190000000,
+                      186178.84
+                  ],
+                  [
+                      1646276400000,
+                      186178.84
+                  ],
+                  [
+                      1646362800000,
+                      186178.84
+                  ],
+                  [
+                      1646622000000,
+                      186178.84
+                  ]
+              ],
+              "__typename": "EquityEvolutionDataSeriesItem"
+          },
+          {
+              "id": "2",
+              "name": "Patrimônio",
+              "data": [
+                  [
+                      1643684400000,
+                      39743.8
+                  ],
+                  [
+                      1643770800000,
+                      63393.8
+                  ],
+                  [
+                      1643857200000,
+                      63396.17
+                  ],
+                  [
+                      1643943600000,
+                      63396.46
+                  ],
+                  [
+                      1644202800000,
+                      63398.1
+                  ],
+                  [
+                      1644289200000,
+                      63398.54
+                  ],
+                  [
+                      1644375600000,
+                      170608.77
+                  ],
+                  [
+                      1644462000000,
+                      185281.26
+                  ],
+                  [
+                      1644548400000,
+                      182780.62
+                  ],
+                  [
+                      1644807600000,
+                      194302.72
+                  ],
+                  [
+                      1644894000000,
+                      180003.62
+                  ],
+                  [
+                      1644980400000,
+                      178473.25
+                  ],
+                  [
+                      1645066800000,
+                      170997.47
+                  ],
+                  [
+                      1645153200000,
+                      169768.87
+                  ],
+                  [
+                      1645412400000,
+                      160675.87
+                  ],
+                  [
+                      1645498800000,
+                      163382.18
+                  ],
+                  [
+                      1645585200000,
+                      160958.11
+                  ],
+                  [
+                      1645671600000,
+                      163567.58
+                  ],
+                  [
+                      1645758000000,
+                      165454.94
+                  ],
+                  [
+                      1646190000000,
+                      175846.9
+                  ],
+                  [
+                      1646276400000,
+                      172558.74
+                  ],
+                  [
+                      1646362800000,
+                      165189.39
+                  ],
+                  [
+                      1646622000000,
+                      162464.35
+                  ]
+              ],
+              "__typename": "EquityEvolutionDataSeriesItem"
+          }
+      ],
+      "__typename": "EquityEvolution"
+  }
+}
+
+Composição da Carteira
+
+{
+  "getWalletAllocation": {
+      "keys": [
+          {
+              "id": "quote_quantity",
+              "label": "Quant. Cotas",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "buy_price",
+              "label": "Preço Médio",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "total_price",
+              "label": "Valor Investido",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "quote_date",
+              "label": "Data da Cota",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "equity_value",
+              "label": "Saldo bruto",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "tax_provision",
+              "label": "Impostos",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "net_value",
+              "label": "Saldo líquido",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "performance",
+              "label": "Rentabilidade",
+              "__typename": "WalletAllocationResponseKey"
+          },
+          {
+              "id": "ev_percent",
+              "label": "% PL",
+              "__typename": "WalletAllocationResponseKey"
+          }
+      ],
+      "values": [
+          {
+              "category": "Conta Corrente",
+              "product_class": [
+                  {
+                      "name": "Caixa",
+                      "data": [
+                          {
+                              "label": "BANCO MODAL | 10/02/2022",
+                              "product_class_color": "#38587a",
+                              "product_profile": 202,
+                              "class_name": "Caixa",
+                              "sub_type_name": "Conta Corrente",
+                              "quote_quantity": 2.33333,
+                              "quote_date": "2022-03-07",
+                              "product_raise": null,
+                              "equity_value": 2347.42837653,
+                              "tax_provision": 4.92,
+                              "net_value": 2342.50837653,
+                              "maturity_date": null,
+                              "performance": 0.006,
+                              "ev_percent": 0.0144488822889991,
+                              "color": "#2972C2",
+                              "total_price": 2333.33,
+                              "buy_price": 1000,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.01444888228899907,
+                      "equity_value": 2347.42837653,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.01444888228899907,
+              "equity_value": 2347.42837653,
+              "color": "#2972C2",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Tesouro Direto",
+              "product_class": [
+                  {
+                      "name": "Inflação",
+                      "data": [
+                          {
+                              "label": "NTNB Tesouro IPCA+ com Juros Semestrais | 15/05/2055",
+                              "product_class_color": "#00DCFF",
+                              "product_profile": 196,
+                              "class_name": "Inflação",
+                              "sub_type_name": "Tesouro Direto",
+                              "quote_quantity": 10,
+                              "quote_date": "2022-01-31",
+                              "product_raise": null,
+                              "equity_value": 39743.8,
+                              "tax_provision": 0,
+                              "net_value": 39743.8,
+                              "maturity_date": null,
+                              "performance": 0,
+                              "ev_percent": 0.244630887851152,
+                              "color": "#EAC74D",
+                              "total_price": 39743.8,
+                              "buy_price": 3974.38,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.24463088785115156,
+                      "equity_value": 39743.8,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.24463088785115156,
+              "equity_value": 39743.8,
+              "color": "#EAC74D",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Crédito Privado",
+              "product_class": [
+                  {
+                      "name": "Pós-Fixado",
+                      "data": [
+                          {
+                              "label": "CRI ISEC SECURITIZADORA S.A | 16/02/2030",
+                              "product_class_color": "#ae4600",
+                              "product_profile": 206,
+                              "class_name": "Pós-Fixado",
+                              "sub_type_name": "Crédito Privado",
+                              "quote_quantity": 230,
+                              "quote_date": "2022-03-07",
+                              "product_raise": null,
+                              "equity_value": 22930.93882,
+                              "tax_provision": 0,
+                              "net_value": 22930.93882,
+                              "maturity_date": null,
+                              "performance": 0.012,
+                              "ev_percent": 0.141144428132112,
+                              "color": "#4707C5",
+                              "total_price": 23000,
+                              "buy_price": 100,
+                              "__typename": "WalletAllocationResponseProduct"
+                          },
+                          {
+                              "label": "CRA TRUE Securitizadora S.A. | 16/08/2023",
+                              "product_class_color": "#ae4600",
+                              "product_profile": 201,
+                              "class_name": "Pós-Fixado",
+                              "sub_type_name": "Crédito Privado",
+                              "quote_quantity": 23.44,
+                              "quote_date": "2022-03-07",
+                              "product_raise": null,
+                              "equity_value": 2020.51717072,
+                              "tax_provision": 0,
+                              "net_value": 2020.51717072,
+                              "maturity_date": null,
+                              "performance": -0.138,
+                              "ev_percent": 0.0124366796680672,
+                              "color": "#4707C5",
+                              "total_price": 2344,
+                              "buy_price": 100,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.15358110780017933,
+                      "equity_value": 24951.45599072,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.15358110780017933,
+              "equity_value": 24951.45599072,
+              "color": "#4707C5",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Fundo Multimercado",
+              "product_class": [
+                  {
+                      "name": "Multimercado",
+                      "data": [
+                          {
+                              "label": "XP DEBENTURES INCENTIVADAS CP FIC FIM",
+                              "product_class_color": "#d8495b",
+                              "product_profile": 198,
+                              "class_name": "Multimercado",
+                              "sub_type_name": "Fundo Multimercado",
+                              "quote_quantity": 148.261132053897,
+                              "quote_date": "2022-03-04",
+                              "product_raise": null,
+                              "equity_value": 319.10004455,
+                              "tax_provision": 0,
+                              "net_value": 319.10004455,
+                              "maturity_date": null,
+                              "performance": -0.0028,
+                              "ev_percent": 0.00196412339060705,
+                              "color": "#6205d0",
+                              "total_price": 320,
+                              "buy_price": 2.15835,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.001964123390607051,
+                      "equity_value": 319.10004455,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.001964123390607051,
+              "equity_value": 319.10004455,
+              "color": "#6205d0",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Ação",
+              "product_class": [
+                  {
+                      "name": "Renda Variável",
+                      "data": [
+                          {
+                              "label": "ALSO3",
+                              "product_class_color": "#1b0d29",
+                              "product_profile": 135,
+                              "class_name": "Renda Variável",
+                              "sub_type_name": "Ação",
+                              "quote_quantity": 111,
+                              "quote_date": "2022-03-07",
+                              "product_raise": null,
+                              "equity_value": 2246.64,
+                              "tax_provision": 0,
+                              "net_value": 2246.64,
+                              "maturity_date": null,
+                              "performance": -0.1142,
+                              "ev_percent": 0.0138285100539433,
+                              "color": "#D62023",
+                              "total_price": 2536.35,
+                              "buy_price": 22.85,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.013828510053943284,
+                      "equity_value": 2246.64,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.013828510053943284,
+              "equity_value": 2246.64,
+              "color": "#D62023",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "BDR",
+              "product_class": [
+                  {
+                      "name": "Internacional",
+                      "data": [
+                          {
+                              "label": "A1AP34 - ADVANCE AUTO",
+                              "product_class_color": "#3333cc",
+                              "product_profile": 200,
+                              "class_name": "Internacional",
+                              "sub_type_name": "BDR",
+                              "quote_quantity": 21,
+                              "quote_date": "2022-03-07",
+                              "product_raise": null,
+                              "equity_value": 1361.85,
+                              "tax_provision": 0,
+                              "net_value": 1361.85,
+                              "maturity_date": null,
+                              "performance": -0.1168,
+                              "ev_percent": 0.00838245398326508,
+                              "color": "#6C22CA",
+                              "total_price": 1542.03,
+                              "buy_price": 73.43,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.00838245398326508,
+                      "equity_value": 1361.85,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.00838245398326508,
+              "equity_value": 1361.85,
+              "color": "#6C22CA",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Criptomoeda",
+              "product_class": [
+                  {
+                      "name": "Criptomoeda",
+                      "data": [
+                          {
+                              "label": "BTCUSDT",
+                              "product_class_color": "#f0b126",
+                              "product_profile": 203,
+                              "class_name": "Criptomoeda",
+                              "sub_type_name": "Criptomoeda",
+                              "quote_quantity": 2.22,
+                              "quote_date": "2022-03-07",
+                              "product_raise": null,
+                              "equity_value": 84333.36,
+                              "tax_provision": 0,
+                              "net_value": 84333.36,
+                              "maturity_date": null,
+                              "performance": -0.1266,
+                              "ev_percent": 0.519088379376677,
+                              "color": "#A41C1C",
+                              "total_price": 96559.88,
+                              "buy_price": 43495.44,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.5190883793766774,
+                      "equity_value": 84333.36,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.5190883793766774,
+              "equity_value": 84333.36,
+              "color": "#A41C1C",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Previdência",
+              "product_class": [
+                  {
+                      "name": "Renda Variável",
+                      "data": [
+                          {
+                              "label": "BRASILPREV TOP A FI EM  ACOES",
+                              "product_class_color": "#1b0d29",
+                              "product_profile": 199,
+                              "class_name": "Renda Variável",
+                              "sub_type_name": "Previdência",
+                              "quote_quantity": 96.9340888110122,
+                              "quote_date": "2022-03-04",
+                              "product_raise": null,
+                              "equity_value": 346.20746518,
+                              "tax_provision": 1.61,
+                              "net_value": 344.59746518,
+                              "maturity_date": null,
+                              "performance": 0.0183,
+                              "ev_percent": 0.00213097488382289,
+                              "color": "#E9833A",
+                              "total_price": 340,
+                              "buy_price": 3.50754,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.0021309748838228863,
+                      "equity_value": 346.20746518,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.0021309748838228863,
+              "equity_value": 346.20746518,
+              "color": "#E9833A",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Personalizado",
+              "product_class": [
+                  {
+                      "name": "Imobiliário",
+                      "data": [
+                          {
+                              "label": "TESTE COMPARADOR DE CARTEIRAS",
+                              "product_class_color": "#800000",
+                              "product_profile": 204,
+                              "class_name": "Imobiliário",
+                              "sub_type_name": "Personalizado",
+                              "quote_quantity": 385.4165625,
+                              "quote_date": "2022-02-17",
+                              "product_raise": null,
+                              "equity_value": 578.12484375,
+                              "tax_provision": 0,
+                              "net_value": 578.12484375,
+                              "maturity_date": null,
+                              "performance": -0.9531,
+                              "ev_percent": 0.0035584718576324,
+                              "color": "#ADACBC",
+                              "total_price": 12333.33,
+                              "buy_price": 32,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.0035584718576324044,
+                      "equity_value": 578.12484375,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.0035584718576324044,
+              "equity_value": 578.12484375,
+              "color": "#ADACBC",
+              "__typename": "WalletAllocationResponseValue"
+          },
+          {
+              "category": "Moeda",
+              "product_class": [
+                  {
+                      "name": "Cambial",
+                      "data": [
+                          {
+                              "label": "USD",
+                              "product_class_color": "#ca6464",
+                              "product_profile": 93,
+                              "class_name": "Cambial",
+                              "sub_type_name": "Moeda",
+                              "quote_quantity": 1233,
+                              "quote_date": "2022-03-07",
+                              "product_raise": null,
+                              "equity_value": 6236.3907,
+                              "tax_provision": 0,
+                              "net_value": 6236.3907,
+                              "maturity_date": null,
+                              "performance": -0.0292,
+                              "ev_percent": 0.038386208513722,
+                              "color": "#8B4513",
+                              "total_price": 6424.05,
+                              "buy_price": 5.2101,
+                              "__typename": "WalletAllocationResponseProduct"
+                          }
+                      ],
+                      "ev_percent": 0.038386208513722,
+                      "equity_value": 6236.3907,
+                      "__typename": "WalletAllocationResponseProductClass"
+                  }
+              ],
+              "ev_percent": 0.038386208513722,
+              "equity_value": 6236.3907,
+              "color": "#8B4513",
+              "__typename": "WalletAllocationResponseValue"
+          }
+      ],
+      "__typename": "WalletAllocationResponse"
+  }
+}
+
+Ganho Financeiro
+
+{
+  "getWalletFixedReturnTable": {
+      "keys": [
+          {
+              "id": "mtd",
+              "label": "No mês",
+              "__typename": "WalletFixedReturnTableKey"
+          },
+          {
+              "id": "3m",
+              "label": "3 meses",
+              "__typename": "WalletFixedReturnTableKey"
+          },
+          {
+              "id": "6m",
+              "label": "6 meses",
+              "__typename": "WalletFixedReturnTableKey"
+          },
+          {
+              "id": "ytd",
+              "label": "No ano",
+              "__typename": "WalletFixedReturnTableKey"
+          },
+          {
+              "id": "12m",
+              "label": "12 meses",
+              "__typename": "WalletFixedReturnTableKey"
+          },
+          {
+              "id": "24m",
+              "label": "24 meses",
+              "__typename": "WalletFixedReturnTableKey"
+          },
+          {
+              "id": "36m",
+              "label": "36 meses",
+              "__typename": "WalletFixedReturnTableKey"
+          },
+          {
+              "id": "inception",
+              "label": "Desde o início",
+              "__typename": "WalletFixedReturnTableKey"
+          }
+      ],
+      "values": [
+          {
+              "id": "mtd",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -2990.59,
+              "date_report": "2022-02-25",
+              "absolute_return": -0.020846,
+              "annualized_return": -0.654147,
+              "relative_return": -12.96643,
+              "volatility": 0.869987,
+              "sharpe": -0.84,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "3m",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -24652.01,
+              "date_report": "2022-02-01",
+              "absolute_return": -0.144705,
+              "annualized_return": -0.819604,
+              "relative_return": -16.407057,
+              "volatility": 0.47755,
+              "sharpe": -1.92,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "6m",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -24652.01,
+              "date_report": "2022-02-01",
+              "absolute_return": -0.144705,
+              "annualized_return": -0.819604,
+              "relative_return": -16.407057,
+              "volatility": 0.47755,
+              "sharpe": -1.92,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "ytd",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -24652.01,
+              "date_report": "2022-02-01",
+              "absolute_return": -0.144705,
+              "annualized_return": -0.819604,
+              "relative_return": -16.407057,
+              "volatility": 0.47755,
+              "sharpe": -1.92,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "12m",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -24652.01,
+              "date_report": "2022-02-01",
+              "absolute_return": -0.144705,
+              "annualized_return": -0.819604,
+              "relative_return": -16.407057,
+              "volatility": 0.47755,
+              "sharpe": -1.92,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "24m",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -24652.01,
+              "date_report": "2022-02-01",
+              "absolute_return": -0.144705,
+              "annualized_return": -0.819604,
+              "relative_return": -16.407057,
+              "volatility": 0.47755,
+              "sharpe": -1.92,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "36m",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -24652.01,
+              "date_report": "2022-02-01",
+              "absolute_return": -0.144705,
+              "annualized_return": -0.819604,
+              "relative_return": -16.407057,
+              "volatility": 0.47755,
+              "sharpe": -1.92,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "inception",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -24652.01,
+              "date_report": "2022-02-01",
+              "absolute_return": -0.144705,
+              "annualized_return": -0.819604,
+              "relative_return": -16.407057,
+              "volatility": 0.47755,
+              "sharpe": -1.92,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          },
+          {
+              "id": "td",
+              "label": "COMPARADOR DE CARTEIRAS",
+              "equity_value": 0,
+              "ev_percent": 1,
+              "quote_value": 0.855294137,
+              "equity_return": -2725.03,
+              "date_report": "2022-03-04",
+              "absolute_return": -0.019612,
+              "annualized_return": -0.917558,
+              "relative_return": -48.824935,
+              "volatility": 0,
+              "sharpe": null,
+              "key": "wallet_17",
+              "benchmark": "CDI %",
+              "type": "wallet",
+              "color": null,
+              "sub_type": null,
+              "__typename": "WalletFixedReturnTableValue"
+          }
+      ],
+      "__typename": "WalletFixedReturnTable"
+  }
+}
+
+
+Disponibilidade Financeira
+
+{
+  "getLiquidityDistribution": {
+    "series": [
+        {
+            "data": [
+                0,
+                84.39,
+                84.59,
+                84.59,
+                84.59,
+                85.84
+            ],
+            "__typename": "LiquidityDistributionSerie"
+        },
+        {
+            "data": [
+                84.39,
+                0.2,
+                0,
+                0,
+                1.25,
+                14.16
+            ],
+            "__typename": "LiquidityDistributionSerie"
+        }
+    ],
+    "categories": [
+        "Até 3 dias",
+        "De 4 a 31 dias",
+        "De 32 a 90 dias",
+        "De 91 a 180 dias",
+        "De 181 a 720 dias",
+        "Acima de 721 dias"
+    ],
+    "dataSource": [
+        {
+            "id": 1,
+            "key": "Até 3 dias",
+            "label": "Até 3 dias",
+            "percent": "0.8439",
+            "percent_cum": "0.8439",
+            "value": "136615.67654171",
+            "value_cum": "136615.67654171",
+            "__typename": "DataSourceItem"
+        },
+        {
+            "id": 2,
+            "key": "De 4 a 31 dias",
+            "label": "De 4 a 31 dias",
+            "percent": "0.002",
+            "percent_cum": "0.8459",
+            "value": "319.10004455",
+            "value_cum": "136934.77658626",
+            "__typename": "DataSourceItem"
+        },
+        {
+            "id": 3,
+            "key": "De 32 a 90 dias",
+            "label": "De 32 a 90 dias",
+            "percent": "0",
+            "percent_cum": "0.8459",
+            "value": "0",
+            "value_cum": "136934.77658626",
+            "__typename": "DataSourceItem"
+        },
+        {
+            "id": 4,
+            "key": "De 91 a 180 dias",
+            "label": "De 91 a 180 dias",
+            "percent": "0",
+            "percent_cum": "0.8459",
+            "value": "0",
+            "value_cum": "136934.77658626",
+            "__typename": "DataSourceItem"
+        },
+        {
+            "id": 5,
+            "key": "De 181 a 720 dias",
+            "label": "De 181 a 720 dias",
+            "percent": "0.0125",
+            "percent_cum": "0.8584",
+            "value": "2020.51717072",
+            "value_cum": "138955.29375698",
+            "__typename": "DataSourceItem"
+        },
+        {
+            "id": 6,
+            "key": "Acima de 721 dias",
+            "label": "Acima de 721 dias",
+            "percent": "0.1416",
+            "percent_cum": "1",
+            "value": "22930.93882",
+            "value_cum": "161886.23257698002",
+            "__typename": "DataSourceItem"
+        }
+    ],
+    "big_numbers": {
+        "today": {
+            "equity_value": 2693.63584171,
+            "days": 0,
+            "date": "2022-03-08",
+            "__typename": "LiquidityDistributionDates"
+        },
+        "week": {
+            "equity_value": 136615.67654171,
+            "days": 4,
+            "date": "2022-03-12",
+            "__typename": "LiquidityDistributionDates"
+        },
+        "month": {
+            "equity_value": 136615.67654171,
+            "days": 23,
+            "date": "2022-03-31",
+            "__typename": "LiquidityDistributionDates"
+        },
+        "year": {
+            "equity_value": 136934.77658626,
+            "days": 298,
+            "date": "2022-12-31",
+            "__typename": "LiquidityDistributionDates"
+        },
+        "__typename": "LiquidityDistributionBigNumbers"
+    },
+    "__typename": "LiquidityDistribution"
+  }
+}
