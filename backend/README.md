@@ -4,13 +4,13 @@
 
 ## Objetivos
 
-O objetivo desse Challenge é testar a sua capacidade e criatividade para extrair, transformar e carregar as informações limpa de um site em uma base de dados.
+O objetivo desse Challenge é testar a sua capacidade e criatividade para extrair, transformar e carregar as informações limpas de um site em uma base de dados.
 
 Iremos trabalhar com os dados abertos da CVM - Comissão de Valores Mobiliários.
 
 ## Regras de Negócio:
 
-A primeira tarefa é criar uma banco postgresql na [AWS](https://aws.amazon.com/pt/free).
+A primeira tarefa é criar um banco postgresql na [AWS](https://aws.amazon.com/pt/free).
 
 Criar uma tabela `fund_report` onde serão salvas as cotas de cada fundo dia a dia, com a seguinte estrutura:
 
@@ -18,6 +18,7 @@ Criar uma tabela `fund_report` onde serão salvas as cotas de cada fundo dia a d
 {
   cnpj varchar(14)
   quote_value float(8) not null
+  date_report date not null
 }
 ```
 
@@ -28,7 +29,7 @@ Onde:
 
 - `SCRAP_DATE` = Exemplo: para Janeiro de 2021 (01/2021), ficaria `202101` (Sempre no formato YYYYMM).<p>
   O link vai baixar um arquivo .csv mensal com as cotas de todos os fundos, todos os dias do mês.
-  Você, então, deverá salvar os campos `CNPJ_FUNDO` e `VL_QUOTA` na tabela que fora criada acima.</p>
+  Você, então, deverá salvar os campos `CNPJ_FUNDO`, `VL_QUOTA` e `DT_COMPTC` na tabela que fora criada acima.</p>
 
 **A base deverá ser populada com os dados do ano de 2021 (de Janeiro a Dezembro).**
 <br/>
