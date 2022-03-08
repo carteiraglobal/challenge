@@ -4,7 +4,7 @@
 
 ![resumo-de-carteira](./resumo-carteira.png)
 
-## Figma:
+## Figma
 
 [Design](https://www.figma.com/file/67xGQrWCefY6RVvZaDnlRh/Challenge%3A-Resumo-de-Carteira?node-id=28%3A507)
 
@@ -12,14 +12,14 @@
 
 - Implementar a página de Resumo de Carteira conforme o design proposto.
 
-## Definition of Done:
+## Definition of Done
 
 - O usuário terá a experiência sugerida pelo designer tanto em um dispositivo desktop quanto mobile, sendo informado sobre o status do sistema (carregamento, sucesso ou falha).
 - O usuário conseguirá navegar pelos componentes conforme o fluxo proposto pelo designer (aplica-se aos componentes de Alocação, Gráficos de Rentabilidade e Patrimônio e Composição da Carteira).
 - A aplicação consumirá corretamente APIs GraphQL específicas para cada componente.
 - O usuário conseguirá alternar entre os benchmarks CDI e IBOV, visualizando os componentes com dados atualizados referentes a cada um desses benchmarks.
 
-## Instruções:
+## Instruções
 
 - Os dados devem ser formatados exatamente como apresentados no design (ex.: percentual com duas casas decimais e data no formato DD/MM/YYYY).
 - O filtro “Benchmark” terá duas opções: CDI (default) e IBOV. Toda vez que o usuário alterar o benchmark atual é necessário que todos os componentes sejam atualizados com os dados referentes àquele benchmark. É exatamente por isso que existem dois mocks, um corresponde ao CDI e o outro ao IBOV.
@@ -28,7 +28,7 @@
 - No desktop, a sidebar é aberta achatando os componentes à direita.
 - No mobile, a sidebar é aberta sobrepondo os componentes da página.
 
-## Requisitos Técnicos:
+## Requisitos Técnicos
 
 - Tecnologias
   - Você deve utilizar Next.js sem TypeScript.
@@ -41,7 +41,7 @@
   - Você deve subir o seu código em um repositorio público no GitHub.
   - O prazo de entrega será estabelecido previamente e caso não seja possível concluir o challenge até a data/hora prevista, o código será considerado até o último commit dentro do prazo.
 
-## Bônus:
+## Bônus
 
 _Parâmetros não-obrigatórios, mas que serão pontuados!_
 
@@ -49,7 +49,7 @@ _Parâmetros não-obrigatórios, mas que serão pontuados!_
 - Documentação de código com JSDoc.
 - Criatividade e previsão de eventuais problemas/inconsistências no código/interface.
 
-## Critérios de Avaliação:
+## Critérios de Avaliação
 
 - Respeito aos requisitos técnicos estabelecidos.
 - Componentização (estruturação e capacidade de reutilização dos componentes).
