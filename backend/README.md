@@ -3,100 +3,108 @@
 # Challenge Backend
 
 ## Objetivos
-O objetivo desse Challenge é testar a sua capacidade e criatividade para extrair, transformar e carregar as informações limpa de um site em uma base de dados.
 
-Iremos trabalhar com os dados abertos da SUSEP - Superintendência de Seguros Privados - que, apesar de voltada para seguros, também regula a parcela de planos e fundos de investimentos de previdência privada.
+O objetivo desse Challenge é testar a sua capacidade e criatividade para extrair, transformar e carregar as informações limpas de um site em uma base de dados.
 
-O conjunto de dados abertos se encontra seguinte link:
-https://dados.gov.br/organization/superintendencia-de-seguros-privados-susep
+Iremos trabalhar com os dados abertos da CVM - Comissão de Valores Mobiliários.
 
-Mais informações:
-http://www.susep.gov.br/menu/informacoes-ao-publico/planos-e-produtos/previdencia-complementar-aberta#planopgbl
+## Regras de Negócio:
 
-No dataset de "Consulta de Produtos", temos o [Dicionário de Dados](http://dados.susep.gov.br/olinda-ide/servico/produtos/versao/v1/documentacao) com a documentação dos campos que são retornados nos registros. Além disso, tem também o [link](http://dados.susep.gov.br/olinda-ide/servico/produtos/versao/v1/odata/DadosProdutos?$format=json) para o "Registro dos produtos de seguros, previdência ..." que é a lista dos produtos propriamente dita.
+A primeira tarefa é criar um banco postgresql na [AWS](https://aws.amazon.com/pt/free).
 
-## Regras de Negócio
+Criar uma tabela `fund_report` onde serão salvas as cotas de cada fundo dia a dia, com a seguinte estrutura:
 
-A primeira tarefa é capturar esses dados, em Python, através da lib [requests](https://requests.readthedocs.io/en/master/) e salvar esse JSON na sua máquina (ambiente local).
+```
+{
+  cnpj varchar(14)
+  quote_value float(8) not null
+  date_report date not null
+}
+```
 
-A partir desse documento, filtrar todos os Número de Processo SUSEP no qual o `tipoproduto` seja "PLANO DE PREVIDÊNCIA" (ver dicionário acima), em seguida, buscar o Regulamento do Processo no link abaixo e baixar:
-http://www.susep.gov.br/menu/consulta-de-produtos-1
+Então deverá criar um crawler no link da CVM
+http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/inf_diario_fi_{SCRAP_DATE}.csv
 
-O documento PDF deve ser baixado na sua máquina (ambiente local).
+Onde:
 
-A partir disso, precisamos extrair as seguintes informações do PDF e salvar um novo JSON.
+- `SCRAP_DATE` = Exemplo: para Janeiro de 2021 (01/2021), ficaria `202101` (Sempre no formato YYYYMM).<p>
+  O link vai baixar um arquivo .csv mensal com as cotas de todos os fundos, todos os dias do mês.
+  Você, então, deverá salvar os campos `CNPJ_FUNDO`, `VL_QUOTA` e `DT_COMPTC` na tabela que fora criada acima.</p>
 
+**A base deverá ser populada com os dados do ano de 2021 (de Janeiro a Dezembro).**
+<br/>
 
-**Exemplo de Processo SUSEP:**
-<br/>15414.607577/2020-12 
-<br/>15414.900943/2013-72
+O próximo passo será criar uma API Rest que receba os seguintes parametros:
 
-**Exemplo Processo SUSEP nº:** 15414.900943/2013-72
+- `{CNPJ}` = Cnpj do fundo sem traços, pontos e barras (. - /)
+- `{INIT_DATE}` = Data inicial no formato **YYYY-MM-DD**
+- `{END_DATE}` = Data final no formato **YYYY-MM-DD**
 
-**Características**
-<br/>**CNPJ da Entidade:** 51.990.695/0001-37
-<br/>**Nome da Entidade:**  BRADESCO VIDA E PREVIDÊNCIA S.A.
-<br/>**Descrição do Processo:** VGBL INDIVIDUAL - Renda fixa
-<br/>**Data de Distribuição:** 14/10/2013
-<br/>**Tábua Atuarial Masculina:** BR-EMSsb
-<br/>**Tábua Atuarial Feminina:** BR-EMSsb
-<br/>**Taxa de Carregamento:** 0% Cobrado quando da efetivação de pedidos de resgate e/ou portabilidade
-<br/>**Taxa de Juros:** 0%
-<br/>**Percentual de Reversão:** 0%
-<br/>**Status na SUSEP:** ARQUIVADO/ARQUIVO GERAL
+E retornar um **JSON** com a rentabilidade do fundo no período, caso não seja passado nenhuma data, calcular o período completo.
 
-**Tipos de renda**
-<br/>**Pagamento único:** SIM
-<br/>**Mensal temporária (máximo de 600 meses):** SIM
-<br/>**Mensal prazo certo:** SIM
-<br/>**Mensal vitalícia:** SIM
-<br/>**Mensal vitalícia com prazo mínimo garantido:** SIM
-<br/>**Mensal vitalícia reversível ao beneficiário indicado:** SIM
-<br/>**Mensal vitalícia reversível ao cônjuge com continuidade aos menores (maioridade aos 24):** SIM
-<br/>**Mensal vitalícia reversível ao cônjuge:** N/A
-<br/>**Mensal reversível aos menores:** N/A
+```json
+{
+  "rentability": Float
+}
+```
 
-**Da aplicação dos recursos**
-<br/>(Art. 54. Os recursos do plano serão aplicados em um dos seguintes FIEs)
+### Calcular a rentabilidade:
 
-**CNPJ Fundo | Nome Fundo | Taxa de Administração**
-<br/>17.488.983/0001-50 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA I-A 1,9 %
-<br/>17.488.691/0001-17 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA II-A 1,9 %
-<br/>17.517.216/0001-21 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA III-A 1,5 %
-<br/>17.517.250/0001-04 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA IV-A 1,2 %
-<br/>17.517.268/0001-06 BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA V-A 1 %
-<br/>17.999.961/0001-54 BRADESCO FUNDO DE INVESTIMENTO RENDA FIXA MÁSTER IV PREVIDÊNCIA 0 %
+1. Primeiro deve se calcular o Fator: `fator = (cota_final / cota_inicial)`
+2. A rentabilidade se dá por `r = (f - 1) * 100`
 
-**Parâmetros técnicos**
-<br/>**Valor mínimo da provisão matemática de benefícios a conceder:** R$ 500,00
-<br/>**Prazo de Carência:** 6 meses
-<br/>**Carência para Portabilidade:** 60 dias
-<br/>**Carência para Portabilidade na própria Entidade:** 60 dias
+## _Você deverá disponibilizar a URL da API no README do challenge no GitHub_
 
+<hr /><br />
 
-### Histórico de Documentos
-- Baixar e salvar todos os documentos na consulta: http://www.susep.gov.br/menu/consulta-de-produtos-1
-- Salvar também a Data de Início de Comercialização e Data de Fim de Comercialização.
-- O JSON salvo, com as informações extraídas do documento PDF, tem que ter o nome legível das variáveis em INGLÊS.
+## Bônus 1 _(não é obrigatório, avaliaremos como um extra)_
 
+Adicionar um parâmetro na API, `"invest_value"` que seria o **patrimônio** na `INIT_DATE`
+e retornar quanto seria o patrimônio no `END_DATE`.
 
-## Extra _(não é obrigatório, avaliaremos como um extra)_
-Outra possibilidade é extrair parte dessas informações a partir do processo Exemplo Processo SUSEP, do seguinte link:
-http://www.susep.gov.br/menu/servicos-ao-cidadao/calculo-vgbl
+```json
+  {
+    "rentability": Float,
+    "equity_value": Float
+  }
+```
 
-O único problema é o reCAPTCHA, que previne o scrapper.
-De qualquer maneira, a coisa mais importante aqui é o cálculo a partir da tábua atuarial. 
-Por exemplo: Renda Mensal Vitalicia. Mais importante que pegar essas informações, dado que podem ser obtidas pelo PDF, é modelar essa memória de cálculo.
+## Bônus 2 _(não é obrigatório, avaliaremos como um extra)_
 
-Assim, esse Challenge extra é conseguir modelar o cálculo da Renda Mensal Vitalicia a partir das informações obtida na leitura do PDF e inputs a seguir (contidos no site):
+Adicionar o parâmetro `return=full` na API que retorna uma lista com a posição **diária** do investimento no fundo.
 
-![susep-calculo](./susep-calculo.png)
+Por exemplo:
 
+- `init_date` = 2021-01-04
+- `end_date` = 2021-01-08
+- `invest_value` = 10000
+- `cnpj` = 0000000000
+- `return` = full
+
+O retorno deveria ser:
+
+```json
+[
+  {
+    "date_report": "2021-01-04",
+    "rentability": 0,
+    "equity_value": 10000
+  },
+  ...,
+  {
+    "date_report": "2021-01-08",
+    "rentability": Rentabilidade no dia,
+    "equity_value": Patrimônio no dia
+  }
+]
+```
 
 ## O que será avaliado
-- Extração dos dados;
-- Manipulação de listas e dicionários;
-- Manipulação dos arquivos;
-- Componentização das funções por cada responsabilidade (extract, transform, load);
-- Organização de code base, tanto código quanto arquivos;
 
+- Extração dos dados;
+- Manipulação dos arquivos;
+- Manipulação de listas e dicionários;
+- Noção de banco de dados;
+- Noção de criação de uma API simples;
+- Componentização das funções por cada responsabilidade (extract, transform, load);
+- Organização de code base;
