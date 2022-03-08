@@ -10,7 +10,7 @@ Iremos trabalhar com os dados abertos da CVM - Comissão de Valores Mobiliários
 
 ## Tarefas
 
-#### Estruturar banco de dados
+### Estruturar banco de dados
 A primeira tarefa é criar um banco PostgreSQL na [AWS](https://aws.amazon.com/pt/free).
 
 Criar uma tabela `fund_report` onde serão salvas as cotas de cada fundo dia a dia, com a seguinte estrutura:
@@ -23,7 +23,7 @@ Criar uma tabela `fund_report` onde serão salvas as cotas de cada fundo dia a d
 }
 ```
 
-#### Crawler dos dados
+### Crawler dos dados
 
 Desenvolver um crawler do seguinte link da CVM: 
 http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/inf_diario_fi_{SCRAP_DATE}.csv
@@ -36,7 +36,7 @@ O link vai baixar um arquivo CSV mensal com as cotas de todos os fundos, todos o
 
 **A base deverá ser populada com os dados do ano de 2021 (de Janeiro a Dezembro).**
 
-#### API dos dados de rentabilidade
+### API dos dados de rentabilidade
 
 O próximo passo será criar uma API Rest que seja responsável por retornar a rentabilidade de um fundo específico:
 
@@ -53,7 +53,7 @@ O retorno um **JSON** com a rentabilidade do fundo no período, caso não seja p
 }
 ```
 
-##### Como calcular a rentabilidade
+#### Como calcular a rentabilidade
 
 1. Primeiro deve se calcular o Fator: `fator = (cota_final / cota_inicial)`
 2. A rentabilidade se dá por `r = (f - 1) * 100`
@@ -62,7 +62,7 @@ O retorno um **JSON** com a rentabilidade do fundo no período, caso não seja p
 
 _As tarefas abaixo não são obrigatórias, avaliaremos como um extra._
 
-### Bônus 1 
+## Bônus 1 
 
 Adicionar um parâmetro na API, `"invest_value"` que seria o **patrimônio** na `INIT_DATE`
 e retornar quanto seria o patrimônio no `END_DATE`.
@@ -74,7 +74,7 @@ e retornar quanto seria o patrimônio no `END_DATE`.
   }
 ```
 
-### Bônus 2
+## Bônus 2
 
 Adicionar o parâmetro `return=full` na API que retorna uma lista com a posição **diária** do investimento no fundo.
 
@@ -104,7 +104,7 @@ O retorno deveria ser:
 ]
 ```
 
-### O que será avaliado no teste
+## O que será avaliado no teste
 
 - Extração dos dados
 - Manipulação dos arquivos
