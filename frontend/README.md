@@ -2,31 +2,42 @@
 
 # Challenge Front-end
 
-![resumo-de-carteira](./resumo-carteira.png)
+![planejador-de-poupanca](./planejador-de-poupanca.png)
 
 ## Figma
 
-[Design](https://www.figma.com/file/67xGQrWCefY6RVvZaDnlRh/Challenge%3A-Resumo-de-Carteira?node-id=28%3A507)
+[Design](https://www.figma.com/file/MsoBmvrxZN0PkXNRGiFJBI/Challenge%3A-Planejador-de-Poupan%C3%A7a?node-id=1%3A4)
 
 ## Objetivos
 
-- Implementar a página de Resumo de Carteira conforme o design proposto.
+- Implementar o Planejador de Poupança conforme o design proposto.
 
 ## Definition of Done
 
 - O usuário terá a experiência sugerida pelo designer tanto em um dispositivo desktop quanto mobile, sendo informado sobre o status do sistema (carregamento, sucesso ou falha).
-- O usuário conseguirá navegar pelos componentes conforme o fluxo proposto pelo designer (aplica-se aos componentes de Alocação, Gráficos de Rentabilidade e Patrimônio e Composição da Carteira).
 - A aplicação consumirá corretamente APIs GraphQL específicas para cada componente.
-- O usuário conseguirá alternar entre os benchmarks CDI e IBOV, visualizando os componentes com dados atualizados referentes a cada um desses benchmarks.
 
 ## Instruções
 
-- Os dados devem ser formatados exatamente como apresentados no design (ex.: percentual com duas casas decimais e data no formato DD/MM/YYYY).
-- O filtro “Benchmark” terá duas opções: CDI (default) e IBOV. Toda vez que o usuário alterar o benchmark atual é necessário que todos os componentes sejam atualizados com os dados referentes àquele benchmark. É exatamente por isso que existem dois mocks, um corresponde ao CDI e o outro ao IBOV.
-- O componente de Alocação é paginado a partir de quatro itens. Abaixo disso, a paginação sequer aparece.
-- O collapse no componente de Composição da Carteira deve funcionar e todos os collapses vêm abertos por padrão.
-- No desktop, a sidebar é aberta achatando os componentes à direita.
-- No mobile, a sidebar é aberta sobrepondo os componentes da página.
+- Os dados devem ser formatados exatamente como apresentados no design (ex.: valores percentuais com duas casas decimais seguidas de "%").
+- Os inputs do componente Dados Básicos devem apresentar as máscaras indicadas no design.
+- Quando todos os inputs forem preenchidos, os componentes de output (Participação no Valor Acumulado e Projeção Financeira) deverão ser atualizados.
+- A legenda do gráfico de Participação no Valor Acumulado deve ser ordenada pelo percentual de participação, do maior para o menor.
+- Em relação ao gráfico de Projeção Financeira, na interface, as proporções podem estar fora de escala. Então se atente aos valores e não à correspondência entre os pontos e os seus respectivos valores.
+
+## Regras de Negócio
+
+- Investimento Inicial: VI
+- Valor da Parcela: VP
+- Período (em meses): T
+- Taxa de Juros (em % a.a.): J
+
+- O valor acumulado VA (em R$) é dado pelo montante do investimento inicial (II), acrescido das parcelas mensais (VP), pelo período de tempo determinado (T) a uma taxa de juros compostos anual estabelecida (J). Dica: Pesquise como são calculados os juros compostos.
+- O percentual de participação P de um valor V (em R$) sobre o valor acumulado VA é dado por P = V / VA.
+- O valor investido VT (em R$) é dado por VT = VI + VP \* T ou VT = VA - J.
+- O valor investido no mês X (VC) é dado por VC = VI + VP \* X e o valor acumulado no mesmo mês é o montante de juros até o mês X (cálculo de juros compostos).
+
+- Observação: Todos os cálculos deverão ser feitos nos resolvers apropriados!
 
 ## Requisitos Técnicos
 
@@ -36,7 +47,6 @@
   - Para a criação dos gráficos, recomenda-se o uso da biblioteca Highcharts.
   - Você deve criar um endpoint GraphQL com Apollo Server para a implementação das APIs.
   - Você deve criar um cliente GraphQL com Apollo Client para o consumo das APIs.
-  - Você deve subir um json-server com os mocks fornecidos neste repositório.
 - Submissão
   - Você deve subir o seu código em um repositorio público no GitHub.
   - O prazo de entrega será estabelecido previamente e caso não seja possível concluir o challenge até a data/hora prevista, o código será considerado até o último commit dentro do prazo.
